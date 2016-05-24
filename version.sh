@@ -17,3 +17,6 @@ node -v
 echo ""
 echo "→ jspm"
 jspm -v
+echo ""
+echo "→ compass"
+compass -v
