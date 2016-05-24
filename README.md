@@ -1,21 +1,21 @@
 # docker-devtools
 
-[![](https://imagelayers.io/badge/devigner/devtools:latest.svg)](https://imagelayers.io/?images=devigner/devtools:latest 'Get your own badge on imagelayers.io')
+[![](https://imagelayers.io/badge/devigner/cs-tools:latest.svg)](https://imagelayers.io/?images=devigner/cs-tools:latest 'Get your own badge on imagelayers.io')
 
-[Docker Hub](https://hub.docker.com/r/devigner/devtools/)
+[Docker Hub](https://hub.docker.com/r/devigner/cs-tools/)
 
 ---
 
 ## Run
 
-    docker run -v $HOME/:/home/dev/ -v `pwd`:/src -u `id -u` -t devigner/devtools <command>
+    docker run -v $HOME/:/home/dev/ -v `pwd`:/src -u `id -u` -t devigner/cs-tools <command>
 
 ---
 
-## Create /usr/local/bin/devtools:
+## Create /usr/local/bin/cs-tools:
 
     #!/bin/bash
-    docker run -v $HOME/:/home/dev/ -v `pwd`:/src -u `id -u` -t devigner/devtools $@
+    docker run -v $HOME/:/home/dev/ -v `pwd`:/src -u `id -u` -t devigner/cs-tools $@
 
 ---
 
@@ -31,23 +31,23 @@
 
 ### npm
 
-    devtools npm install
+    cs-tools npm install
 
 ### jspm
 
-    devtools jspm install
+    cs-tools jspm install
 
 ### gulp
 
-    devtools gulp
+    cs-tools gulp
 
 ### grunt
 
-    devtools grunt
+    cs-tools grunt
 
 ### compass
 
-    devtools compass
+    cs-tools compass
 
 ---
 
@@ -55,7 +55,7 @@
 ### version check
 
 
-    devtools versions
+    cs-tools versions
 
 
 Should output:
