@@ -2,7 +2,7 @@
 
 [![](https://imagelayers.io/badge/devigner/devtools:latest.svg)](https://imagelayers.io/?images=devigner/devtools:latest 'Get your own badge on imagelayers.io')
 
-- latest [Dockerfile](https://github.com/devigner/docker-devtools/blob/master/Dockerfile)
+[Docker Hub](https://hub.docker.com/r/devigner/devtools/)
 
 ---
 
@@ -16,6 +16,14 @@
 
     #!/bin/bash
     docker run -v $HOME/:/home/dev/ -v `pwd`:/src -u `id -u` devigner/devtools $@
+
+---
+
+## TODO
+
+- Get JSPM to run without errors
+- Get output in colors
+- Get NPM output be less verbose
 
 ---
 
