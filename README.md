@@ -8,14 +8,14 @@
 
 ## Run
 
-    docker run -v $HOME/:/home/dev/ -v `pwd`:/src -u `id -u` devigner/devtools <command>
+    docker run -v $HOME/:/home/dev/ -v `pwd`:/src -u `id -u` -t devigner/devtools <command>
 
 ---
 
 ## Create /usr/local/bin/devtools:
 
     #!/bin/bash
-    docker run -v $HOME/:/home/dev/ -v `pwd`:/src -u `id -u` devigner/devtools $@
+    docker run -v $HOME/:/home/dev/ -v `pwd`:/src -u `id -u` -t devigner/devtools $@
 
 ---
 
