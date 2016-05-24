@@ -1,0 +1,33 @@
+{
+  "name": "jspm-demo",
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "index.js",
+  "directories": {
+    "test": "tests",
+    "packages": "assets/js/jspm_packages"
+  },
+  "dependencies": {
+    "jspm": "^0.16.27"
+  },
+  "scripts": {
+    "build": "jspm bundle assets/js/Main.js assets/js/Build.js",
+    "dist": "jspm bundle-sfx assets/js/Main.js assets/js/Dist.js --minify",
+    "depcache": "jspm depcache assets/js/Dist.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "directories": {
+      "packages": "assets/js/jspm_packages",
+      "test": "tests"
+    },
+    "configFile": "assets/js/config.js",
+    "dependencies": {},
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

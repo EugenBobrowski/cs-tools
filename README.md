@@ -22,7 +22,7 @@
 ## TODO
 
 - Get JSPM to run without errors
-- Get output in colors
+- ~~Get output in colors~~
 - Get NPM output be less verbose
 
 ---
